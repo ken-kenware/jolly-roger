@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        mouth: {
+          '0%, 100%': { transform: 'scale(1,1)' },
+          '50%': { transform: 'scale(1.05,1) translateY(15px)'}
+        }
+      },
+      animation: {
+        mouth: 'mouth 0.25s cubic-bezier(0, 0, 0.2, 1) infinite'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
