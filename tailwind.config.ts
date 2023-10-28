@@ -10,8 +10,8 @@ const config: Config = {
     extend: {
       keyframes: {
         mouth: {
-          '0%, 100%': { transform: 'scale(1,1)' },
-          '50%': { transform: 'scale(1.05,1) translateY(15px)'}
+          '0%, 100%': { transform: 'scale(1,1) translateX(-50%)' },
+          '50%': { transform: 'scale(1.05,1) translateX(-47.5%) translateY(15px)'}
         }
       },
       animation: {

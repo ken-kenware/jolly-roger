@@ -19,7 +19,6 @@ export function useSound(url: string) {
     return {
         play: async () => {
             await canPlay.current;
-            console.log('You can play me now!');
             audio.current?.play();
         },
         onPlay: (callBackFn: () => any) => {
