@@ -10,7 +10,7 @@ declare global {
   }
   class MediaStreamTrackProcessor {
     constructor(props: MediaStreamTrackProcessorProps);
-    public readable: ReadableStream<VideoFrame>
+    public readable: ReadableStream<any>
   }
 
   class OffscreenCanvas extends HTMLCanvasElement {
