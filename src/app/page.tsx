@@ -13,13 +13,8 @@ declare global {
     public readable: ReadableStream<any>
   }
 
-  class OffscreenCanvas extends HTMLCanvasElement {
-    constructor(width: number, height: number);
-  }
-
   interface Window {
     MediaStreamTrackProcessor: MediaStreamTrackProcessor;
-    OffscreenCanvas: OffscreenCanvas;
   }
   
 }
